@@ -29,6 +29,10 @@ nav .container a:visited{
     justify-content: space-between;
 }
 
+section {
+    margin-right: 2rem;
+}
+
 ul li {
     list-style: decimal;
 }
@@ -46,6 +50,7 @@ aside {
     background-color: #22f;
     color: #eee;
     width: 20rem;
+    margin-left: 2rem;
     padding: 1rem;
     border-radius: 10px;
     -moz-border-radius: 10px;
