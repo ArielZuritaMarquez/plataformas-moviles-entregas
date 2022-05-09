@@ -3,26 +3,6 @@ body{
     margin: 0px;
 }
 
-nav {
-    background-color: rgb(0, 0, 50);
-    padding: 10px 0px 10px 0px;
-}
-
-nav .container {
-    margin: 0px 60px 0px 60px;
-}
-
-nav .container a{
-    color: #eee;
-    font-weight: 500;
-    font-size: 2ch;
-    text-decoration: none;
-}
-
-nav .container a:visited{
-    color: #eee;
-}
-
 .container {
     margin: 20px 60px 20px 60px;
     display: flex;
@@ -35,11 +15,6 @@ section {
 
 ul li {
     list-style: decimal;
-}
-
-a {
-    color: #000;
-    text-decoration: none;
 }
 
 a:hover {
