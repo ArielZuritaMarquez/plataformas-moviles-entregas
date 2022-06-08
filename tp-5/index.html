@@ -1,0 +1,188 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>TP5 - Bootstrap</title>
+  <style>
+    .fs-custom {
+    font-size: calc(0.625rem + 1vw);
+    }
+    .foot-item{
+      height: 15px;
+      font-size: calc(0.5rem + 1vw);
+    }
+    @media (min-width: 576px) {
+      .foot-item {
+        height: 30px;
+      }
+    }
+    @media (min-width: 992px) {
+      .foot-item {
+        height: 45px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="h-100 w-100">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="">
+          <img src="imagenes/logoipsum-logo-6.svg" alt="" class="d-inline-block align-text-top me-2">
+        </a>
+        <div class="nav-item text-light me-2">Lorem Ipsum</div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lorem</a>
+            </li>
+          </ul>
+          <form class="d-flex mb-2 mb-lg-0" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-3">
+      <div class="row">
+        <div class="col col-sm-6 col-lg-3 g-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagenes/Lorem1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent cursus risus eu est facilisis faucibus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-6 col-lg-3 g-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagenes/Lorem2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent cursus risus eu est facilisis faucibus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-6 col-lg-3 g-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagenes/Lorem3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent cursus risus eu est facilisis faucibus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-6 col-lg-3 g-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagenes/Lorem4.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent cursus risus eu est facilisis faucibus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-3">
+        <h2>Formulario</h2>
+        <div class="row mb-3">
+          <div class="col-12 col-lg-6">
+            <label for="">Nombre</label>
+          </div>
+          <div class="col-12 col-lg-6">
+            <input type="name" class="form-control" placeholder="Nombre">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-12 col-lg-6">
+            <label for="">Correo electrónico</label>
+          </div>
+          <div class="col-12 col-lg-6">
+            <input type="email" class="form-control" placeholder="nombre@correo.com">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-12 col-lg-6">
+            <label for="">Comentarios</label>
+          </div>
+          <div class="col-12 col-lg-6">
+            <textarea class="form-control" placeholder="Deje un mensaje aquí" style="height: 200px ;resize: none;"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6 offset-lg-6 d-flex justify-content-center">
+            <button type="submit" class="btn btn-success mx-2">Enviar</button>
+            <button type="submit" class="btn btn-danger mx-2">Borrar datos</button>
+          </div>
+        </div>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/LoremLG1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/LoremLG2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/LoremLG3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/LoremLG4.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="my-3">
+        <h1 class="display-1 fw-normal d-flex justify-content-center">Lorem</h1>
+        <h2 class="display-4 d-flex justify-content-center">Ipsum</h2>
+        <p class="fs-custom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et semper felis. Morbi iaculis arcu et odio vestibulum, at porttitor sem blandit. Pellentesque et bibendum dolor, sit amet molestie purus. Fusce maximus urna nec blandit cursus. Proin hendrerit bibendum turpis, laoreet finibus libero. Integer non neque quam. Etiam lobortis aliquam quam vel laoreet. Maecenas in lacus varius, lobortis leo sed, elementum elit. In vitae felis ac nulla fermentum tempor. Nulla vulputate gravida imperdiet. Curabitur sit amet sem aliquet erat dignissim efficitur. Vestibulum ante tortor, pellentesque id sodales eget, porta eget nibh. Vestibulum sed eros faucibus, rhoncus lacus id, facilisis leo. Vivamus iaculis enim id odio lobortis, eget auctor arcu varius. Vestibulum vel pulvinar eros. Sed nec gravida risus.</p>
+        <p class="fs-custom">Curabitur pellentesque non massa a lacinia. Quisque egestas blandit tortor, at facilisis ex porttitor non. Nunc eros eros, laoreet id arcu sit amet, mollis fringilla metus. Duis imperdiet, velit eu pharetra scelerisque, nibh ex consectetur magna, et viverra leo nunc a massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent eget sapien tellus. Aliquam quis lacus eu justo feugiat semper. Morbi at sagittis dolor. Pellentesque efficitur mi eu sapien efficitur tempor. Etiam vehicula ac diam ut accumsan.</p>
+        <p class="fs-custom">Donec lobortis quis lorem vitae elementum. Morbi vulputate augue felis, at pretium justo commodo vitae. Nam luctus aliquet elit, ac consectetur leo. Suspendisse commodo turpis non massa ultrices, volutpat tempus nibh commodo. Praesent quis lacinia neque. Morbi pharetra ornare sem, ac eleifend justo ultrices eget. Curabitur venenatis diam eu volutpat ullamcorper. Fusce non eros at justo tristique vulputate. Maecenas ac turpis non diam accumsan sodales. Nulla sit amet augue quis velit imperdiet suscipit ut hendrerit ligula.</p>
+      </div>
+    </div>
+    <footer class="footer sticky-bottom bg-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="foot-item col-12 col-lg-4 d-flex justify-content-center align-items-center">
+            <div class="text-center text-light">
+              Lorem
+            </div>
+          </div>
+          <div class="foot-item col-12 col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
+            <div class="text-center text-light">
+              Ipsum
+            </div>
+          </div>
+          <div class="foot-item col-12 col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
+            <div class="text-center text-light">
+              Todos los derechos reservados
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
